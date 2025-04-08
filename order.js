@@ -10,7 +10,7 @@ const successMessage = document.getElementById('success-message');
 
 if (form) {
   form.addEventListener('submit', function (e) {
-    e.preventDefault(); // Prevent page reload
+    e.preventDefault();
     successMessage.style.display = 'block';
     form.reset();
   });
