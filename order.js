@@ -1,14 +1,17 @@
-
 const urlParams = new URLSearchParams(window.location.search);
 const item = urlParams.get('item');
 if (item) {
   document.getElementById('product-name').textContent = "Ordering: " + decodeURIComponent(item);
 }
 
-
+// Handle form submission
 const form = document.getElementById('order-form');
-form.addEventListener('submit', function (event) {
-  event.preventDefault();
-  document.getElementById('success-message').style.display = 'block';
-  form.reset();
-});
+const successMessage = document.getElementById('success-message');
+
+if (form) {
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent page reload
+    successMessage.style.display = 'block';
+    form.reset();
+  });
+}
