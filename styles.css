@@ -50,3 +50,43 @@ nav a:hover {
 .button:hover {
   background-color: #444;
 }
+form {
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+#product-name {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+#success-message {
+  text-align: center;
+  font-size: 18px;
+  color: green;
+  margin-top: 20px;
+}
